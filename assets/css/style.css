@@ -540,12 +540,12 @@ h6 {
     transition: 0.3s;
     line-height: 1;
     color: white;
-    border: 2px solid #cda45e;
+    border: 2px solid #A63F04;
 }
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
-    background: #cda45e;
+    background: #A63F04;
     color: #fff;
 }
 
