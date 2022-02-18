@@ -567,6 +567,34 @@
                     <div class="text-center"><button type="submit">Book a Table</button></div>
                 </form>
 ---------------------------------------------------------->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" class="php-email-form">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 form-group">
+                            <input id="name" type="name" placeholder="Enter your name..." data-sb-validations="required" class="form-control">
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                            <input id="email" type="email" placeholder="Correo" class="form-control" data-sb-validations="required">
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                            <input id="phone" type="phone" placeholder="Telefono" class="form-control" data-sb-validations="required">
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input id="text" name="date" placeholder="Fecha" class="form-control" data-sb-validations="required">
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input id="text" name="time" placeholder="Hora" class="form-control" data-sb-validations="required">
+                        </div>
+                        <div class="col-lg-4 col-md-6 form-group mt-3">
+                            <input id="people" name="people" placeholder="Número de personas" class="form-control" data-sb-validations="required">
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">Su reserva ha sido exitosa!</div>
+                    <div class="d-none" id="submitErrorMessage">Ha ocurrido un error, por favor intentelo de nuevo</div>
+                    <button class="disabled" id="submitButton" type="submit">Send Message</button>
+                </form>
             </div>
         </section>
         <!-- End Book A Table Section -->
