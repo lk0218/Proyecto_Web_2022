@@ -1209,7 +1209,7 @@ section {
     padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type="submit"] {
+.book-a-table .disabled [type="submit"] {
     background: #ffffff;
     border: 0;
     padding: 10px 35px;
@@ -1218,7 +1218,7 @@ section {
     border-radius: 50px;
 }
 
-.book-a-table .php-email-form button[type="submit"]:hover {
+.book-a-table .disabled [type="submit"]:hover {
     background: #A63F04;
 }
 
