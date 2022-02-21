@@ -858,18 +858,18 @@ section {
 
 .nav-tabs .nav-link.active {
     background-color: transparent;
-    border-color: #A63F04 #A63F04 #1a1814;
-    color: #A63F04;
+    border-color: #cda45e #cda45e #1a1814;
+    color: #cda45e;
 }
 
 .nav-tabs .nav-link:hover {
     background-color: transparent;
     border-color: transparent;
-    color: #A63F04;
+    color: #cda45e;
 }
 
 .nav {
-    border-color: #A63F04;
+    border-color: #cda45e;
 }
 
 .nav-link {
@@ -957,7 +957,7 @@ section {
 }
 
 .menu .menu-content a:hover {
-    color: #cda45e;
+    color:#cda45e;
 }
 
 .menu .menu-content span {
