@@ -211,12 +211,24 @@
 
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="menu-flters" class="nav nav-tabs" role="tablist">
+                            <li data-filter="*" class="filter-active nav-item active" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" type="button" role="tab">Todo</button></li>
+                            <li data-filter=".filter-starters" class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Entradas</button></li>
+                            <li data-filter=".filter-salads" class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Cortes</button></li>
+                            <li data-filter=".filter-specialty" class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Especiales</button></li>
+
+                        </ul>
+                        <!--
                         <ul id="menu-flters">
                             <li data-filter="*" class="filter-active">Todo</li>
                             <li data-filter=".filter-starters">Entradas</li>
                             <li data-filter=".filter-salads">Cortes</li>
                             <li data-filter=".filter-specialty">Especiales</li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
 
@@ -527,7 +539,7 @@
                     <h2>Reservas</h2>
                     <p>Reservar una mesa</p>
                 </div>
-<!------  Original Form -----------------------------------------------
+                <!------  Original Form -----------------------------------------------
                 <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 form-group">
@@ -813,11 +825,190 @@
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
+
+            <div class="container " data-aos="fade-up">
+
+                <div class="section-title contact-pad">
+                    <h2>Contacto</h2>
+                    <p>Contáctanos</p>
+                </div>
+            </div>
+
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tama-tab" data-bs-toggle="tab" data-bs-target="#tamarindo" type="button" role="tab" aria-controls="tamarindo" aria-selected="true">Tamarindo</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="montverd-tab" data-bs-toggle="tab" data-bs-target="#monteverde" type="button" role="tab" aria-controls="monteverde" aria-selected="false">Monteverde</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tamarindo" role="tabpanel" aria-labelledby="tama-tab">
+                        <div data-aos="fade-up">
+                            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15702.045946088923!2d-85.84684612733896!3d10.300888481745908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9e39409203c30f%3A0xbb189f5e2cc1f893!2sProvincia%20de%20Guanacaste%2C%20Tamarindo!5e0!3m2!1ses-419!2scr!4v1645170555880!5m2!1ses-419!2scr"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row mt-5">
+
+                                <div class="col-lg-4">
+                                    <div class="info">
+                                        <div class="address">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <h4>Ubicación:</h4>
+                                            <p>Tamarindo</p>
+                                        </div>
+
+                                        <div class="open-hours">
+                                            <i class="bi bi-clock"></i>
+                                            <h4>Horario:</h4>
+                                            <p>
+                                                Lunes-Sábado:<br> 11:00 AM - 10:00 PM
+                                            </p>
+                                        </div>
+
+                                        <div class="email">
+                                            <i class="bi bi-envelope"></i>
+                                            <h4>Email:</h4>
+                                            <p>info@halurest.com</p>
+                                        </div>
+
+                                        <div class="phone">
+                                            <i class="bi bi-phone"></i>
+                                            <h4>Teléfono:</h4>
+                                            <p>+1 5589 55488 55s</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
+                                            </div>
+                                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:" required>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <textarea class="form-control" name="message" rows="8" placeholder="Mensaje:" required></textarea>
+                                        </div>
+                                        <div class="my-3">
+                                            <div class="loading">Cargando</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                                        </div>
+                                        <div class="text-center"><button type="submit">Enviar</button></div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show" id="monteverde" role="tabpanel" aria-labelledby="montverd-tab">
+                        <div data-aos=" fade-up ">
+                            <iframe style="border:0; width: 100%; height: 350px; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.3152371824717!2d-84.8212808494377!3d10.316636992598406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa01b9bb153a705%3A0x70d817a959a69173!2sHalu%20Steakhouse!5e0!3m2!1ses-419!2scr!4v1645413274683!5m2!1ses-419!2scr"
+                                frameborder="0 " allowfullscreen></iframe>
+                        </div>
+
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row mt-5">
+
+                                <div class="col-lg-4">
+                                    <div class="info">
+                                        <div class="address">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <h4>Ubicación:</h4>
+                                            <p>Monteverde</p>
+                                        </div>
+
+                                        <div class="open-hours">
+                                            <i class="bi bi-clock"></i>
+                                            <h4>Horario:</h4>
+                                            <p>
+                                                Lunes-Sábado:<br> 11:00 AM - 10:00 PM
+                                            </p>
+                                        </div>
+
+                                        <div class="email">
+                                            <i class="bi bi-envelope"></i>
+                                            <h4>Email:</h4>
+                                            <p>info@halurest.com</p>
+                                        </div>
+
+                                        <div class="phone">
+                                            <i class="bi bi-phone"></i>
+                                            <h4>Teléfono:</h4>
+                                            <p>+1 5589 55488 55s</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
+                                            </div>
+                                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:" required>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <textarea class="form-control" name="message" rows="8" placeholder="Mensaje:" required></textarea>
+                                        </div>
+                                        <div class="my-3">
+                                            <div class="loading">Cargando</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                                        </div>
+                                        <div class="text-center"><button type="submit">Enviar</button></div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+    <!--
+        <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Contact Us</p>
+                    <h2>Contacto</h2>
+                    <p>Contactanos</p>
                 </div>
             </div>
 
@@ -893,10 +1084,7 @@
 
             </div>
         </section>
-        <!-- End Contact Section -->
-
-    </main>
-    <!-- End #main -->
+   End Contact Section -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -948,10 +1136,10 @@
                         <img src="assets/img/logo-footer.png" class="img-fluid" alt="Logo de Steakhouse">
                     </div>
 
-                    </div>
-
                 </div>
+
             </div>
+        </div>
         </div>
 
         <div class="container">
