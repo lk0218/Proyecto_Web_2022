@@ -858,18 +858,18 @@ section {
 
 .nav-tabs .nav-link.active {
     background-color: transparent;
-    border-color: #cda45e #cda45e #1a1814;
-    color: #cda45e;
+    border-color: #A63F04 #A63F04 #1a1814;
+    color: #A63F04;
 }
 
 .nav-tabs .nav-link:hover {
     background-color: transparent;
     border-color: transparent;
-    color: #cda45e;
+    color: #A63F04;
 }
 
 .nav {
-    border-color: #cda45e;
+    border-color: #A63F04;
 }
 
 .nav-link {
@@ -897,12 +897,12 @@ section {
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1;
     color: #fff;
     margin-bottom: 0px;
     transition: all ease-in-out 0.3s;
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -973,7 +973,7 @@ section {
     margin-left: 85px;
     font-style: italic;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.5);
 }
 
