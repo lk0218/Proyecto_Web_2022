@@ -1571,8 +1571,8 @@ input:valid+span:after {
 .contact .info p {
     padding: 0 0 0 60px;
     margin-bottom: 0;
-    font-size: 14px;
-    color: #bab3a6;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.883);
 }
 
 .contact .info .open-hours,
