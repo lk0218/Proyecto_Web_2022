@@ -317,6 +317,7 @@ h6 {
     display: none;
     line-height: 0;
     transition: 0.5s;
+    padding-left: 6rem;
 }
 
 @media (max-width: 991px) {
