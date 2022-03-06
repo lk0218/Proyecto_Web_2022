@@ -579,12 +579,17 @@
                     </div>
                     <div class="text-center"><button type="submit">Book a Table</button></div>
                 </form>
----------------------------------------------------------->
-                <form id="contactForm" data-sb-form-api-token="f631f44e-0909-4eb7-bb23-7700137ce5b2" class="php-email-form">
+
+
+
+             Form actual
+
+                <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mt-3 mt-md-0 form-group">
-                            <label>Nombre</label>
+                            <label for="name">Nombre</label>
                             <input id="name" type="name" data-sb-validations="required" class="form-control" required>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Por favor completar este campo.</div>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label>Correo</label>
@@ -596,11 +601,11 @@
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label>Fecha</label>
-                            <input type="date" id="text" name="date" placeholder="Fecha" class="form-control" data-sb-validations="required" required>
+                            <input type="date" id="date" name="date" placeholder="Fecha" class="form-control" data-sb-validations="required" required>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label>Hora <span>(Horario: 11:00 - 22:00)</span></label>
-                            <input type="time" id="text" name="time" class="form-control" data-sb-validations="required" min="11:00" max="22:00" required>
+                            <input type="time" id="time" name="time" class="form-control" data-sb-validations="required" min="11:00" max="22:00" required>
 
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
@@ -616,99 +621,84 @@
                     <div class="d-none" id="submitErrorMessage">Ha ocurrido un error, por favor intentelo de nuevo</div>
                     <div class="text-center"><button class="disabled" id="submitButton" type="submit">Reservar</button></div>
                 </form>
-            </div>
         </section>
-        <!-- End Book A Table Section -->
+ End Book A Table Section -->
 
-        <!-- ======= Testimonials Section ======= 
-        <section id="testimonials" class="testimonials section-bg">
-            <div class="container" data-aos="fade-up">
+     <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
+        <div class="row">
+         <div class="col-lg-4 col-md-6 mt-3 mt-md-0 form-group">
+             <label class="form-label" for="nombre">Nombre</label>
+             <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+             <div class="invalid-feedback" data-sb-feedback="nombre:required">Por favor completar este campo</div>
+         </div>
+         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+             <label class="form-label" for="telefono">Teléfono</label>
+             <input class="form-control" id="telefono" type="tel" placeholder="Teléfono" data-sb-validations="required" />
+             <div class="invalid-feedback" data-sb-feedback="telefono:required">Por favor completar este campo</div>
+         </div>
+         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+             <label class="form-label" for="ubicacion">Ubicación</label>
+             <select class="form-select" id="ubicacion" aria-label="Ubicación">
+                 <option value="Playas del Coco">Playas del Coco</option>
+                 <option value="Tamarindo">Tamarindo</option>
+             </select>
+         </div>
+         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+             <label class="form-label" for="fecha">Fecha</label>
+             <input class="form-control" id="fecha" type="date" placeholder="Fecha" data-sb-validations="required" />
+             <div class="invalid-feedback" data-sb-feedback="fecha:required">Por favor elija una fecha</div>
+         </div>
+         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+             <label class="form-label" for="hora">Hora</label>
+             <select class="form-select" id="hora" aria-label="Hora">
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+             </select>
+         </div>
+         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+             <label class="form-label" for="numeroDePersonas">Número de personas</label>
+             <input class="form-control" id="numeroDePersonas" type="number" min="1" max="8" placeholder="Máximo 8 personas" data-sb-validations="required" />
+             <div class="invalid-feedback" data-sb-feedback="numeroDePersonas:required">Por favor completar este campo</div>
+         </div>
+         <div class="form-group mt-3">
+             <label class="form-label" for="informacionAdicional">Información adicional</label>
+             <textarea class="form-control" id="informacionAdicional" type="text" placelder="Información adicional" style="height: 10rem;"></textarea>
+         </div>
+         <div class="d-none" id="submitSuccessMessage">
+             <div class="text-center mb-3">
+                 <div class="fw-bolder">>Su reserva pronto será confirmada por mensaje de texto</div>
+             </div>
+         </div>
+         <div class="d-none" id="submitErrorMessage">
+             <div class="text-center text-danger mb-3">Ha ocurrido un error, por favor intentelo de nuevo</div>
+         </div>
+         <div class="text-center">
+             <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Reservar</button>
+         </div>
+     </form>
+    </div>
+</section>
 
-                <div class="section-title">
-                    <h2>Testimonials</h2>
-                    <p>What they're saying about us</p>
-                </div>
-
-                <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                            </div>
-                        </div>
-                        End testimonial item 
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure
-                                    amet legam anim culpa.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                            </div>
-                        </div>
-                         End testimonial item 
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                    minim.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                            </div>
-                        </div>
-                         End testimonial item 
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                    dolore labore illum veniam.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                            </div>
-                        </div>
-                         End testimonial item 
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
-                                    veniam culpa fore nisi cillum quid.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                            </div>
-                        </div>
-                         End testimonial item 
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-        </section>
-         End Testimonials Section -->
 
         <!-- ======= Gallery Section ======= -->
         <section id="gallery" class="gallery">
