@@ -375,89 +375,6 @@
                     <h2>Reservas</h2>
                     <p>Reservar una mesa</p>
                 </div>
-                <!------  Original Form -----------------------------------------------
-                <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Número de teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="text" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="text" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="number" class="form-control" name="people" id="people" placeholder="Número de personas" data-rule="minlen:1" data-msg="Por favor agregar al menos 1 lugar">
-                            <div class="validate"></div>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                        <div class="validate"></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Book a Table</button></div>
-                </form>
-
-
-
-             Form actual
-
-                <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mt-3 mt-md-0 form-group">
-                            <label for="name">Nombre</label>
-                            <input id="name" type="name" data-sb-validations="required" class="form-control" required>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Por favor completar este campo.</div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <label>Correo</label>
-                            <input id="email" type="email" class="form-control" data-sb-validations="required" required>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <label>Teléfono</label>
-                            <input type="tel" id="phone" type="phone" class="form-control" data-sb-validations="required" required>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <label>Fecha</label>
-                            <input type="date" id="date" name="date" placeholder="Fecha" class="form-control" data-sb-validations="required" required>
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <label>Hora <span>(Horario: 11:00 - 22:00)</span></label>
-                            <input type="time" id="time" name="time" class="form-control" data-sb-validations="required" min="11:00" max="22:00" required>
-
-                        </div>
-                        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                            <label>Número de personas</label>
-                            <input type="number" id="people" name="people" min="1" max="8" placeholder="Máximo 8 personas" class="form-control" data-sb-validations="required" required>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <label>Información adicional</label>
-                        <textarea class="form-control" name="message" rows="5"></textarea>
-                    </div>
-                    <div class="d-none" id="submitSuccessMessage">Su reserva pronto será confirmada por mensaje de texto</div>
-                    <div class="d-none" id="submitErrorMessage">Ha ocurrido un error, por favor intentelo de nuevo</div>
-                    <div class="text-center"><button class="disabled" id="submitButton" type="submit">Reservar</button></div>
-                </form>
-        </section>
- End Book A Table Section -->
 
                 <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
                     <div class="row">
@@ -474,9 +391,9 @@
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label class="form-label" for="ubicacion">Ubicación</label>
                             <select class="form-select" id="ubicacion" aria-label="Ubicación">
-                 <option value="Playas del Coco">Playas del Coco</option>
-                 <option value="Tamarindo">Tamarindo</option>
-             </select>
+                                <option value="Playas del Coco">Playas del Coco</option>
+                                <option value="Tamarindo">Tamarindo</option>
+                            </select>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label class="form-label" for="fecha">Fecha</label>
@@ -491,29 +408,29 @@
                         <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
                             <label class="form-label" for="hora">Hora</label>
                             <select class="form-select" id="hora" aria-label="Hora">
-               <option value="11:00">11:00</option>
-               <option value="11:30">11:30</option>
-               <option value="12:00">12:00</option>
-               <option value="12:30">12:30</option>
-               <option value="13:00">13:00</option>
-               <option value="13:30">13:30</option>
-               <option value="14:00">14:00</option>
-               <option value="14:30">14:30</option>
-               <option value="15:00">15:00</option>
-               <option value="15:30">15:30</option>
-               <option value="16:00">16:00</option>
-               <option value="16:30">16:30</option>
-               <option value="17:00">17:00</option>
-               <option value="17:30">17:30</option>
-               <option value="18:00">18:00</option>
-               <option value="18:30">18:30</option>
-               <option value="19:00">19:00</option>
-               <option value="19:30">19:30</option>
-               <option value="20:00">20:00</option>
-               <option value="20:30">20:30</option>
-               <option value="21:00">21:00</option>
-               <option value="21:30">21:30</option>
-            </select>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
                         </div>
                         <div class="form-group mt-3">
                             <label class="form-label" for="informacionAdicional">Información adicional</label>
@@ -530,10 +447,11 @@
                         <div class="text-center">
                             <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Reservar</button>
                         </div>
+                    </div>
                 </form>
-                </div>
+            </div>
         </section>
-
+        <!-- End Book a table section -->
 
         <!-- ======= Gallery Section ======= -->
         <section id="gallery" class="gallery">
@@ -585,77 +503,6 @@
             </div>
         </section>
         <!-- End Gallery Section -->
-
-        <!-- ======= Chefs Section ======= 
-        <section id="chefs" class="chefs">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Chefs</h2>
-                    <p>Our Proffesional Chefs</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                            <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Master Chef</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Patissier</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                            <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>Cook</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-         End Chefs Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
@@ -760,34 +607,6 @@
                                         </div>
                                     </form>
 
-                                    <!--
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                        <div class="row">
-                                            <div class="col-md-6 form-group">
-                                                <label>Nombre</label>
-                                                <input type="text" name="name" class="form-control" id="name" required>
-                                            </div>
-                                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                                <label>Correo</label>
-                                                <input type="email" class="form-control" name="email" id="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <label>Asunto</label>
-                                            <input type="text" class="form-control" name="subject" id="subject" required>
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <label>Mensaje</label>
-                                            <textarea class="form-control" name="message" rows="8" required></textarea>
-                                        </div>
-                                        <div class="my-3">
-                                            <div class="loading">Cargando</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-                                        </div>
-                                        <div class="text-center"><button type="submit">Enviar</button></div>
-                                    </form>
-                                    -->
                                 </div>
 
                             </div>
@@ -883,95 +702,12 @@
                 </div>
 
             </div>
-            </div>
+
         </section>
         <!-- End Contact Section -->
     </main>
+
     <!-- End #main -->
-    <!--
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Contacto</h2>
-                    <p>Contactanos</p>
-                </div>
-            </div>
-
-            <div data-aos="fade-up">
-                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="row mt-5">
-
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
-                            </div>
-
-                            <div class="open-hours">
-                                <i class="bi bi-clock"></i>
-                                <h4>Open Hours:</h4>
-                                <p>
-                                    Monday-Saturday:<br> 11:00 AM - 2300 PM
-                                </p>
-                            </div>
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>info@example.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-   End Contact Section -->
-
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
@@ -1006,15 +742,6 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <!--
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a></li>
-                        </ul>
--->
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
@@ -1024,7 +751,6 @@
                 </div>
 
             </div>
-        </div>
         </div>
 
         <div class="container">
