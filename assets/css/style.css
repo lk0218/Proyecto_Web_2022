@@ -159,11 +159,11 @@ h6 {
     color: #fff;
 }
 
-#topbar .social-media-top :hover {
+#header .social-media-top :hover {
     color: #d97823;
 }
 
-#topbar .social-media-top ul {
+#header .social-media-top ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -171,15 +171,15 @@ h6 {
     margin: 0;
 }
 
-#topbar .social-media-top ul a {
+#header .social-media-top ul a {
     color: white;
 }
 
-#topbar .social-media-top ul li+li {
+#header .social-media-top ul li+li {
     padding-left: 10px;
 }
 
-#topbar .social-media-top ul li+li::before {
+#header .social-media-top ul li+li::before {
     display: inline-block;
     padding-right: 10px;
     color: rgba(255, 255, 255, 0.5);
@@ -305,6 +305,7 @@ h6 {
     color: #d97823;
     font-weight: bold;
 }
+
 
 /**
 * Mobile Navigation 
