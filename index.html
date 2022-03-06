@@ -49,8 +49,8 @@
 
             <div class="social-media-top d-none d-md-flex align-items-center">
                 <ul>
-                    <li><a href="#" class="facebook"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="#" class="instagram"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100078922995778" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/halu_steakhouse/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a></li>
                 </ul>
             </div>
 
@@ -895,7 +895,43 @@
                                 </div>
 
                                 <div class="col-lg-8 mt-5 mt-lg-0">
+                                    <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 mt-3 mt-md-0 form-group">
+                                                <label class="form-label" for="nombre">Nombre</label>
+                                                <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+                                                <div class="invalid-feedback" data-sb-feedback="nombre:required">Por favor completar este campo</div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 form-group mt-3 mt-md-0">
+                                                <label class="form-label" for="correo">Correo</label>
+                                                <input class="form-control" id="correo" type="mail" placeholder="Correo" data-sb-validations="required" />
+                                                <div class="invalid-feedback" data-sb-feedback="correo:required">Por favor completar este campo</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3 ">
+                                            <label class="form-label" for="asunto">Asunto</label>
+                                            <input class="form-control" id="asunto" type="text" placeholder="Asunto" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="asunto:required">Por favor completar este campo</div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label" for="mensaje">Mensaje</label>
+                                            <textarea class="form-control" id="mensaje" type="text" placelder="Mensaje" data-sb-validations="required" style="height: 10rem;"></textarea>
+                                            <div class="invalid-feedback" data-sb-feedback="mensaje:required">Por favor completar este campo</div>
+                                        </div>
+                                        <div class="d-none" id="submitSuccessMessage">
+                                            <div class="text-center mb-3">
+                                                <div class="fw-bolder">¡Gracias por escribirnos!</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-none" id="submitErrorMessage">
+                                            <div class="text-center text-danger mb-3">Ha ocurrido un error, por favor intentelo de nuevo</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                                        </div>
+                                    </form>
 
+                                    <!--
                                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                         <div class="row">
                                             <div class="col-md-6 form-group">
@@ -922,6 +958,7 @@
                                         </div>
                                         <div class="text-center"><button type="submit">Enviar</button></div>
                                     </form>
+                                    -->
                                 </div>
 
                             </div>
@@ -973,33 +1010,41 @@
 
                                 <div class="col-lg-8 mt-5 mt-lg-0">
 
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <form id="contactForm" data-sb-form-api-token="814e40d3-eb13-4ce8-82ca-a5fe0e6dd5cf" class="php-email-form">
                                         <div class="row">
-                                            <div class="col-md-6 form-group">
-                                                <label>Nombre</label>
-                                                <input type="text" name="name" class="form-control" id="name" required>
+                                            <div class="col-lg-6 col-md-6 mt-3 mt-md-0 form-group">
+                                                <label class="form-label" for="nombre">Nombre</label>
+                                                <input class="form-control" id="nombre" type="text" placeholder="Nombre" data-sb-validations="required" />
+                                                <div class="invalid-feedback" data-sb-feedback="nombre:required">Por favor completar este campo</div>
                                             </div>
-                                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                                <label>Correo</label>
-                                                <input type="email" class="form-control" name="email" id="email" required>
+                                            <div class="col-lg-6 col-md-6 form-group mt-3 mt-md-0">
+                                                <label class="form-label" for="correo">Correo</label>
+                                                <input class="form-control" id="correo" type="mail" placeholder="Correo" data-sb-validations="required" />
+                                                <div class="invalid-feedback" data-sb-feedback="correo:required">Por favor completar este campo</div>
                                             </div>
+                                        </div>
+                                        <div class="form-group mt-3 ">
+                                            <label class="form-label" for="asunto">Asunto</label>
+                                            <input class="form-control" id="asunto" type="text" placeholder="Asunto" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="asunto:required">Por favor completar este campo</div>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <label>Asunto</label>
-                                            <input type="text" class="form-control" name="subject" id="subject" required>
+                                            <label class="form-label" for="mensaje">Mensaje</label>
+                                            <textarea class="form-control" id="mensaje" type="text" placelder="Mensaje" data-sb-validations="required" style="height: 10rem;"></textarea>
+                                            <div class="invalid-feedback" data-sb-feedback="mensaje:required">Por favor completar este campo</div>
                                         </div>
-                                        <div class="form-group mt-3">
-                                            <label>Mensaje</label>
-                                            <textarea class="form-control" name="message" rows="8" required></textarea>
+                                        <div class="d-none" id="submitSuccessMessage">
+                                            <div class="text-center mb-3">
+                                                <div class="fw-bolder">¡Gracias por escribirnos!</div>
+                                            </div>
                                         </div>
-                                        <div class="my-3">
-                                            <div class="loading">Cargando</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                                        <div class="d-none" id="submitErrorMessage">
+                                            <div class="text-center text-danger mb-3">Ha ocurrido un error, por favor intentelo de nuevo</div>
                                         </div>
-                                        <div class="text-center"><button type="submit">Enviar</button></div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                                        </div>
                                     </form>
-
                                 </div>
 
                             </div>
@@ -1114,9 +1159,8 @@
                                 <strong>Fax:</strong> (506) 2482-1094<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" clasfonos="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100078922995778" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/halu_steakhouse/" target="_blank" clasfonos="instagram"><i class="bx bxl-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1127,6 +1171,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre Nosotros</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#menu">Menú</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#events">Eventos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#book-a-table">Reservas</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#gallery">Galería</a></li>
                         </ul>
                     </div>
