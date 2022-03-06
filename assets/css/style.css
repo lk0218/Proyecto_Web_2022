@@ -1,3 +1,10 @@
+/**
+* Template Name: Restaurantly - v3.1.0
+* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -5,6 +12,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    /*background: #1b2200c9;*/
     background: #010500;
     color: #fff;
 }
@@ -498,6 +506,14 @@ h6 {
     letter-spacing: 1px;
 }
 
+
+/*
+.main-banner .caption h2 em {
+    font-style: normal;
+    color: #f5a425;
+    font-weight: 900;
+}*/
+
 .main-banner .caption p {
     color: #fff;
     font-size: 14px;
@@ -726,6 +742,7 @@ section {
     }
 }
 
+
 /*--------------------------------------------------------------
 # Nav tabs
 --------------------------------------------------------------*/
@@ -781,6 +798,13 @@ section {
     font-family: "Montserrat", sans-serif;
 }
 
+
+/*
+.menu #menu-flters li:hover,
+.menu #menu-flters li.filter-active {
+    color: #cda45e;
+}*/
+
 .menu #menu-flters li:last-child {
     margin-right: 0;
 }
@@ -793,6 +817,7 @@ section {
     width: 70px;
     border-radius: 10%;
     float: left;
+    /*border: 3px solid rgb(205, 164, 94);*/
 }
 
 .menu .menu-content {
@@ -824,6 +849,13 @@ section {
     transition: 0.3s;
 }
 
+
+/*
+.menu .menu-content a:hover {
+    color: #cda45e;
+}
+*/
+
 .menu .menu-content span {
     background: #010500;
     position: relative;
@@ -841,9 +873,11 @@ section {
     color: rgba(255, 255, 255, 0.883);
 }
 
+
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+
 .events {
     background: url(../img/events-bg.jpg) center center no-repeat;
     background-size: cover;
@@ -1071,6 +1105,7 @@ label span {
     color: rgba(255, 255, 255, 0.7);
 }
 
+
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
@@ -1131,6 +1166,7 @@ label span {
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #cda45e;
 }
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1423,4 +1459,11 @@ label span {
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
 }
