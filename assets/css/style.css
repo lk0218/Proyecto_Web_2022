@@ -900,10 +900,6 @@ section {
     margin-bottom: 15px;
 }
 
-.events .event-item .price span {
-    border-bottom: 2px solid #d97823;
-}
-
 .events .event-item ul {
     list-style: none;
     padding: 0;
