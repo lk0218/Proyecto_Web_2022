@@ -1,10 +1,3 @@
-/**
-* Template Name: Restaurantly - v3.1.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 
 /*--------------------------------------------------------------
 # General
@@ -12,7 +5,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /*background: #1b2200c9;*/
     background: #010500;
     color: #fff;
 }
@@ -508,14 +500,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-
-/*
-.main-banner .caption h2 em {
-    font-style: normal;
-    color: #f5a425;
-    font-weight: 900;
-}*/
-
 .main-banner .caption p {
     color: #fff;
     font-size: 14px;
@@ -800,13 +784,6 @@ section {
     font-family: "Montserrat", sans-serif;
 }
 
-
-/*
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
-    color: #cda45e;
-}*/
-
 .menu #menu-flters li:last-child {
     margin-right: 0;
 }
@@ -819,7 +796,6 @@ section {
     width: 70px;
     border-radius: 10%;
     float: left;
-    /*border: 3px solid rgb(205, 164, 94);*/
 }
 
 .menu .menu-content {
@@ -850,13 +826,6 @@ section {
     color: white;
     transition: 0.3s;
 }
-
-
-/*
-.menu .menu-content a:hover {
-    color: #cda45e;
-}
-*/
 
 .menu .menu-content span {
     background: #010500;
@@ -975,64 +944,6 @@ section {
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
-
-.book-a-table .php-email-form {
-    width: 100%;
-}
-
-.book-a-table .php-email-form .form-group {
-    padding-bottom: 8px;
-}
-
-.book-a-table .php-email-form .validate {
-    display: none;
-    color: red;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-}
-
-.book-a-table .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
-
-.book-a-table .php-email-form .error-message br+br {
-    margin-top: 25px;
-}
-
-.book-a-table .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-}
-
-.book-a-table .php-email-form .loading {
-    display: none;
-    text-align: center;
-    padding: 15px;
-}
-
-.book-a-table .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #cda45e;
-    border-top-color: #1a1814;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-}
-
 .book-a-table .php-email-form input,
 .book-a-table .php-email-form textarea {
     border-radius: 0;
@@ -1313,7 +1224,6 @@ label span {
     }
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1423,23 +1333,7 @@ label span {
     color: #d97823;
 }
 
-#footer .footer-top .footer-newsletter form {
-    margin-top: 30px;
-    background: #28251f;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 50px;
-    border: 1px solid #454035;
-}
-
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
-}
-
-#footer .credits {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
-    color: #fff;
 }
